@@ -30,6 +30,7 @@ body{
 header{
     text-align: center;
     font-family: var(--font1);
+    font-size: 2em;
     
 }
 
@@ -37,6 +38,7 @@ header p {
     padding-bottom: 10px;
     font-weight: bold;
     font-family: var(--font2);
+    font-size: 0.6em;
     
 }
 
@@ -48,12 +50,11 @@ header h1{
 
 nav{
     text-align: center;
-    border: 1px solid var(--cor4);
     padding: 15px;
     padding-left: 0px;
     padding-right: 0px;
-    border-radius: 8px;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--cor4);
    
 }
 
@@ -88,7 +89,7 @@ main section{
     background-color: var(--cor1);
     max-width: 1000px;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border-radius: 8px;
     
 }
@@ -97,15 +98,34 @@ main section:hover{
     border: 1px solid var(--cor4);
 }
 main section p {
-    padding: 30px;
-    line-height: 1.5em;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.3em;
+    padding: 10px 30px;
 }
 
 main section img {
     padding: 10px;
 }
 
+main section ul {
+    list-style-position: inside;
+    text-align: justify;
+    padding: 0px 80px;
+}
+
 footer{
     text-align: center;
     padding: 10px;
+    font-size: 12px;
+    color: var(--cor00);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor00);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
 }
