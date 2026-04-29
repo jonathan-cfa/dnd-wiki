@@ -12,10 +12,10 @@
     --cor0:#1D2021;
     --cor1:#17171C;
     --cor2:#0B0B0D;
-    --cor3:#FB706A;
-    --cor4:#E51848;
-    --cor5:#350f1c;
-    --cor6:#2C0E18;
+    --cor3:#fbf16a;
+    --cor4:#e5d718;
+    --cor5:#35310f;
+    --cor6:#2c2c0e;
     --font1:"Cinzel", serif;
     --font2:"Inter", sans-serif;
 
@@ -94,9 +94,10 @@ main section{
     
 }
 
-main section:hover{
+/*Add borda colorida ao passar o mouse
+ main section:hover{
     border: 1px solid var(--cor4);
-}
+} */
 main section p {
     text-indent: 30px;
     text-align: justify;
@@ -105,7 +106,7 @@ main section p {
 }
 img.inicio {
     padding: 10px;
-    width: 500px;
+    max-width:100vw;
     height: 200px;
 }
 
