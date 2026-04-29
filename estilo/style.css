@@ -103,8 +103,7 @@ main section p {
     line-height: 1.3em;
     padding: 10px 30px;
 }
-
-main section img {
+img.inicio {
     padding: 10px;
     width: 500px;
     height: 200px;
@@ -131,3 +130,44 @@ footer a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
+/* CONFIG PAG RAÇAS */
+.racas{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    
+}
+a:hover.racas{
+    color: var(--cor4);
+    background-color: var(--cor6);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h3,h4{
+    text-align: left;
+    padding: 0px 30px;
+    background-image: linear-gradient(to right,var(--cor5),transparent);
+    padding: 8px;
+    margin: 0px;
+    font-variant: small-caps;
+    font-family: var(--font1);
+}
+h5{
+    text-align: left;
+    padding: 10px 30px;
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+.imgraca{
+    max-width: 30vw;
+    max-height: 60vh;
+    
+}
+
+strong{
+    font-style: italic;
+    color: var(--cor3);
+}
+
