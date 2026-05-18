@@ -136,11 +136,15 @@ main section ul.magias{
 section.pai{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 section > article.filho{
-    flex: auto;
+
     border: 1px solid transparent;
     filter: brightness(50%);
+
+
+
 }
 section > article.filho:hover{
     border: 1px solid rgba(255, 255, 0, 0.966);
