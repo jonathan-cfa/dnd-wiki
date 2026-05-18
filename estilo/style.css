@@ -144,6 +144,7 @@ section > article.filho{
     border: 1px solid rgba(94, 94, 94, 0.336);
     border-radius: 10px;
     filter: brightness(50%);
+    flex: auto;
 
 
 
