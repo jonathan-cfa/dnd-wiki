@@ -5,99 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D Wiki BR</title>
-    <link rel="shortcut icon" href="../img/d20-fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilo/style.css">
-    <link rel="stylesheet" href="../estilo/medias.css">
+    <link rel="shortcut icon" href="img/favicon-dnd-wiki.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="../../estilo/style.css">
 </head>
 
-<body>
-    <header>
-        <h1>Wiki D&D BR</h1>
-        <p>Resumo do livro para consulta rápida no livro do jogador</p>
-    </header>
+<header class="cabecalho">
+    <span class="material-symbols-outlined">
+        menu
+        <nav class="menu-oculto">
+            <p>NAVEGAÇÂO</p>
+            <a href="../../index.html">Inicio</a>
+            <a href="../../pages/racas.html">Raças</a>
+            <a href="../../../pages/classes.html">Classes</a>
+            <a href="#">Magias</a>
+            <a href="#">Itens</a>
+            <a href="#">Bestiario</a>
+            <a href="#">Facções</a>
+            <a href="#">Deuses</a>
+            <a href="#">Locais</a>
+            <a href="#">Historia</a>
+        </nav>
+    </span>
+    <img src="../../img/logo-wiki.svg" alt="Logo D&D WIKI BR" class="logo">
+    <h1>D&D WIKI BR</h1>
+</header>
 
-    <nav>
-        <a href="../../index.html">INICIO</a>
-        <a href="../../pages/racas.html">RAÇAS</a>
-        <a href="../../pages/classes.html" class="atual">CLASSES</a>
-        <a href="../../pages/magias.html">MAGIAS</a>
-        <a href="../../pages/mais.html">MAIS</a>
-    </nav>
+    <main class="caixa">
 
-    <main>
-        <section class="pai">
-            <article class="filho" onclick="window.location.href='../pages/classes/barbaro.html';">
-                <h2>BARBARO</h2>
-                <img src="../img/barbaro.webp" alt="Barbaro">
-                <p>Estilo de Jogo: Absorver quantidades massivas de dano e desferir ataques corpo a corpo devastadores.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/bardo.html';">
-                <h2>BARDO</h2>
-                <img src="../img/bardo.webp" alt="Bardo">
-                <p>Estilo de Jogo: Inspirar aliados, curar, usar magias de controle e ser bom em praticamente qualquer perícia.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/bruxo.html';">
-                <h2>BRUXO</h2>
-                <img src="../img/bruxo.webp" alt="Bruxo">
+        <article class="raca">
+            <h2>BARBARO</h2>
+            <img src="../img/barbaro.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Estilo de Jogo: Absorver quantidades massivas de dano e desferir ataques corpo a corpo devastadores.
+                </p>
+                <button><a href="classes/barbaro.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        
+        <article class="raca">
+            <h2>BARDO</h2>
+            <img src="../img/bardo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Estilo de Jogo: Inspirar aliados, curar, usar magias de controle e ser bom em praticamente qualquer perícia.
+                </p>
+                <button><a href="classes/bardo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>BRUXO</h2>
+            <img src="../img/bruxo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Estilo de Jogo: Ataques mágicos constantes a distância, invocações customizáveis e truques de utilidade.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/clerigo.html';">
-                <h2>CLÉRIGO</h2>
-                <img src="../img/clerigo.webp" alt="Clérigo">
-                <p>Estilo de Jogo: Curandeiro essencial, suporte robusto e conjurador de magias sagradas na linha de frente.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/druida.html';">
-                <h2>DRUIDA</h2>
-                <img src="../img/druida.webp" alt="Druida">
-                <p>Estilo de Jogo: Transformar-se em animais para combate/exploração e controlar o campo com magia da natureza.</p>
-            </article>
-
-             <article class="filho" onclick="window.location.href='../pages/classes/feiticeiro.html';">
-                <h2>FEITICEIRO</h2>
-                <img src="../img/feiticeiro.webp" alt="Feiticeiro">
-                <p>Estilo de Jogo: Disparar magias destrutivas e usar Metamagia para alterar como os feitiços funcionam.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/guerreiro.html';">
-                <h2>GUERREIRO</h2>
-                <img src="../img/guerreiro.webp" alt="Guerreiro">
-                <p>Estilo de Jogo: Desferir múltiplos ataques por turno, mestre em armaduras e o pilar físico do grupo.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/ladino.html';">
-                <h2>LADINO</h2>
-                <img src="../img/ladino.webp" alt="Ladino">
-                <p>Estilo de Jogo: Causar dano massivo com Ataque Furtivo, abrir fechaduras e evitar perigos com agilidade.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/mago.html';">
-                <h2>MAGO</h2>
-                <img src="../img/mago.webp" alt="Mago">
-                <p>Estilo de Jogo: A maior variedade de magias do jogo, focado em utilidade, controle de grupo e destruição em área.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/monge.html';">
-                <h2>MONGE</h2>
-                <img src="../img/monge.webp" alt="Monge">
-                <p>Estilo de Jogo: Combate desarmado extremamente rápido, atordoamento de inimigos e alta mobilidade.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/paladino.html';">
-                <h2>PALADINO</h2>
-                <img src="../img/paladino.webp" alt="Paladino">
-                <p>Estilo de Jogo: Defensor pesado de alta resistência, capaz de curar aliados e causar dano massivo com o Destruição Divina.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/classes/patrulheiro.html';">
-                <h2>PATRULHEIRO</h2>
-                <img src="../img/patrulheiro.webp" alt="Patrulheiro">
-                <p>Estilo de Jogo: Combate à distância ou com duas armas, magias de utilidade na natureza e bônus contra inimigos favoritos.</p>
-            </article>
-        </section>
+                    <button><a href="classes/bruxo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>HUMANO</h2>
+            <img src="../img/humano.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Versatilidade sem limites, ambição incansável e adaptabilidade pura. A raça mais moldável e audaciosa de todos os reinos.</p>
+                <button><a href="racas/humano.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>DRACONATO</h2>
+            <img src="../img/draconato.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Orgulho ancestral, a fúria elemental dos dragões e uma presença imponente. Onde passam, eles deixam destruição e respeito.</p>
+                <button><a href="racas/draconato.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>GNOMO</h2>
+            <img src="../img/gnomo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Curiosidade vibrante, intelecto aguçado e uma mente brilhante para a magia e a engenharia. Mestres da astúcia e da ilusão.</p>
+                <button><a href="racas/gnomo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>MEIO-ELFO</h2>
+            <img src="../img/meio-elfo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>O melhor de dois mundos: a graça diplomática dos elfos e a ambição imparável dos humanos. Carisma e versatilidade incomparáveis.</p>
+                <button><a href="racas/meio-elfo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>MEIO-ORC</h2>
+            <img src="../img/meio-orc.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Fúria incontrolável, vigor implacável e uma força brutal que recusa a derrota. O verdadeiro titã da linha de frente.</p>
+                <button><a href="racas/meio-orc.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>TIEFLING</h2>
+            <img src="../img/tiefling.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Herança infernal, mistério sombrio e o domínio sobre as chamas. Uma presença magnética envolta em sombras e magia de fogo.</p>
+                <button><a href="racas/tiefling.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
     </main>
     <footer>
         <p> Em Desenvolvimento</p>

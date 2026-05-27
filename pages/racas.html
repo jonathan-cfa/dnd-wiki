@@ -4,84 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&D Wiki BR</title>
-    <link rel="shortcut icon" href="../img/d20-fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilo/style.css">
-    <link rel="stylesheet" href="../estilo/medias.css">
+    <title>D&D WIKI BR: RAÇAS</title>
+    <link rel="shortcut icon" href="img/favicon-dnd-wiki.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="../../estilo/style.css">
 </head>
 
+<header class="cabecalho">
+    <span class="material-symbols-outlined">
+        menu
+        <nav class="menu-oculto">
+            <p>NAVEGAÇÂO</p>
+            <a href="../../index.html">Inicio</a>
+            <a href="../pages/racas.html">Raças</a>
+            <a href="../../../pages/classes.html">Classes</a>
+            <a href="#">Magias</a>
+            <a href="#">Itens</a>
+            <a href="#">Bestiario</a>
+            <a href="#">Facções</a>
+            <a href="#">Deuses</a>
+            <a href="#">Locais</a>
+            <a href="#">Historia</a>
+        </nav>
+    </span>
+    <img src="../../img/logo-wiki.svg" alt="Logo D&D WIKI BR" class="logo">
+    <h1>D&D WIKI BR</h1>
+</header>
+
 <body>
-    <header>
-        <h1>Wiki D&D BR</h1>
-        <p>Resumo do livro para consulta rápida no livro do jogador</p>
-    </header>
+    <main class="caixa">
 
-    <nav>
-        <a href="../index.html">INICIO</a>
-        <a href="../pages/racas.html" class="atual">RAÇAS</a>
-        <a href="../pages/classes.html">CLASSES</a>
-        <a href="../pages/magias.html">MAGIAS</a>
-        <a href="../pages/mais.html">MAIS</a>
-    </nav>
-
-    <main>
-        <section class="pai">
-            <article class="filho" onclick="window.location.href='../pages/racas/anao.html';">
-                <h2>ANÃO</h2>
-                <img src="../img/anao.webp" alt="Anão">
-                <p>Resistência implacável, tradição ancestral e o poder do ferro. O aliado perfeito na linha de frente.</p>
-            </article>
-            <article class="filho" onclick="window.location.href='../pages/racas/elfo.html';">
-                <h2>ELFO</h2>
-                <img src="../img/elfo.webp" alt="Elfo">
-                <p>Graça elegante, sentidos aguçados e uma conexão ancestral com a magia. O mestre supremo da agilidade e da precisão.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/halfling.html';">
-                <h2>HALFLING</h2>
-                <img src="../img/halfling.webp" alt="Halfling">
-                <p>Sorte inexplicável, coragem surpreendente e uma agilidade furtiva. Pequenos no tamanho, mas gigantes em sobrevivência.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/humano.html';">
-                <h2>HUMANO</h2>
-                <img src="../img/humano.webp" alt="Humano">
+        <article class="raca">
+            <h2>ANÃO</h2>
+            <img src="../img/anao.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Resistência implacável, tradição ancestral e o poder do ferro. O aliado perfeito na linha de frente.
+                </p>
+                <button><a href="racas/anao.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        
+        <article class="raca">
+            <h2>ELFO</h2>
+            <img src="../img/elfo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Graça elegante, sentidos aguçados e uma conexão ancestral com a magia. O mestre supremo da agilidade e da precisão.
+                </p>
+                <button><a href="racas/elfo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>HALFLING</h2>
+            <img src="../img/halfling.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
+                <p>Sorte inexplicável, coragem surpreendente e uma agilidade furtiva. Pequenos no tamanho, mas gigantes
+                    em sobrevivência.</p>
+                    <button><a href="racas/halfling.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>HUMANO</h2>
+            <img src="../img/humano.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Versatilidade sem limites, ambição incansável e adaptabilidade pura. A raça mais moldável e audaciosa de todos os reinos.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/draconato.html';">
-                <h2>DRACONATO</h2>
-                <img src="../img/draconato.webp" alt="Draconato">
+                <button><a href="racas/humano.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>DRACONATO</h2>
+            <img src="../img/draconato.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Orgulho ancestral, a fúria elemental dos dragões e uma presença imponente. Onde passam, eles deixam destruição e respeito.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/gnomo.html';">
-                <h2>GNOMO</h2>
-                <img src="../img/gnomo.webp" alt="Gnomo">
+                <button><a href="racas/draconato.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>GNOMO</h2>
+            <img src="../img/gnomo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Curiosidade vibrante, intelecto aguçado e uma mente brilhante para a magia e a engenharia. Mestres da astúcia e da ilusão.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/meio-elfo.html';">
-                <h2>MEIO-ELFO</h2>
-                <img src="../img/meio-elfo.webp" alt="Meio-Elfo">
+                <button><a href="racas/gnomo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>MEIO-ELFO</h2>
+            <img src="../img/meio-elfo.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>O melhor de dois mundos: a graça diplomática dos elfos e a ambição imparável dos humanos. Carisma e versatilidade incomparáveis.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/meio-orc.html';">
-                <h2>MEIO-ORC</h2>
-                <img src="../img/meio-orc.webp" alt="Meio-Orc">
+                <button><a href="racas/meio-elfo.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>MEIO-ORC</h2>
+            <img src="../img/meio-orc.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Fúria incontrolável, vigor implacável e uma força brutal que recusa a derrota. O verdadeiro titã da linha de frente.</p>
-            </article>
-
-            <article class="filho" onclick="window.location.href='../pages/racas/tiefling.html';">
-                <h2>TIEFLING</h2>
-                <img src="../img/tiefling.webp" alt="Tiefling">
+                <button><a href="racas/meio-orc.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
+        <article class="raca">
+            <h2>TIEFLING</h2>
+            <img src="../img/tiefling.webp" alt="">
+            <details>
+                <summary>Ver Mais</summary>
                 <p>Herança infernal, mistério sombrio e o domínio sobre as chamas. Uma presença magnética envolta em sombras e magia de fogo.</p>
-            </article>
-        </section>
+                <button><a href="racas/tiefling.html">ACESSAR RAÇA</a></button>
+            </details>
+        </article>
     </main>
+
     <footer>
-        <p> Em Desenvolvimento</p>
+        <p>Desenvolvido por <a href="https://instagram.com/jonathancarlosfreitas" target="_blank">Jonathan C.</a></p>
     </footer>
 </body>
 
