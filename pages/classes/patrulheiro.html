@@ -11,126 +11,170 @@
     <link rel="stylesheet" href="../../estilo/style.css">
 </head>
 
-<body><header class="cabecalho">
+<body>
+    <header class="cabecalho">
 
-    <span class="material-symbols-outlined">
-        menu
-        <nav class="menu-oculto">
-            <p>NAVEGAÇÃO</p>
-            <a href="../../index.html">Inicio</a>
-            <a href="../racas.html">Raças</a>
-            <a href="../classes.html">Classes</a>
-            <a href="#">Magias</a>
-            <a href="#">Itens</a>
-            <a href="#">Bestiário</a>
-            <a href="#">Facções</a>
-            <a href="#">Deuses</a>
-            <a href="#">Locais</a>
-            <a href="#">Guias</a>
-        </nav>
-    </span>
-    <img src="../../img/logo-wiki.svg" alt="Logo D&D WIKI BR" class="logo">
-    <h1>D&D WIKI BR</h1>
-</header>
+        <span class="material-symbols-outlined">
+            menu
+            <nav class="menu-oculto">
+                <p>NAVEGAÇÃO</p>
+                <a href="../../index.html">Inicio</a>
+                <a href="../racas.html">Raças</a>
+                <a href="../classes.html">Classes</a>
+                <a href="#">Magias</a>
+                <a href="#">Itens</a>
+                <a href="#">Bestiário</a>
+                <a href="#">Facções</a>
+                <a href="#">Deuses</a>
+                <a href="#">Locais</a>
+                <a href="#">Guias</a>
+            </nav>
+        </span>
+        <img src="../../img/logo-wiki.svg" alt="Logo D&D WIKI BR" class="logo">
+        <h1>D&D WIKI BR</h1>
+    </header>
 
-    <main>
-        <section>
-            <h2>PATRULHEIRO (RANGER)</h2>
-            <img src="../../img/patrulheiro.webp" alt="foto patrulheiro" class="imgraca">
-            <article>
+    <main class="conteudo-racas">
+        <h2>PATRULHEIRO (RANGER)</h2>
+        <img src="../../img/patrulheiro.webp" alt="">
+        <p class="descricao">Guerreiros da natureza, os patrulheiros se especializaram em caçar monstros que ameaçam as
+            margens da civilização.</p>
+        <article class="speed-help">
+            <h3>CONSTRUÇÃO RÁPIDA</h3>
+            <p>Valor de habilidade mais alto em <strong>Destreza</strong>, seguido de <strong>Sabedoria</strong> (Alguns
+                patrulheiros que focam no combate com duas armas deixam a <strong>Força</strong>maior do que a Destreza.
+                Por último escolha o antecedente forasteiro.</p>
+        </article>
+        <article class="tracos">
+            <h2>CARACTERÍSTICAS DE CLASSE</h2>
 
-                <h3> &#x1F9E0 Mecânica Base</h3>
+            <details>
+                <summary class="detail-title"><strong>PONTOS DE VIDA:</strong></summary>
                 <ul>
-                    <li><strong>Dado de Vida (Hit Die):</strong> d10 por nível.</li>
-                    <li><strong>Atributo Principal:</strong> Destreza (Dexterity) e Sabedoria (Wisdom).</li>
-                    <li><strong>Atributo Secundário:</strong> Constituição (Constitution).</li>
-                    <li><strong>Armaduras:</strong> Leves, Médias e Escudos.</li>
-                    <li><strong>Armas:</strong> Simples e Marciais.</li>
-                    <li><strong>Explorador Natural:</strong> Vantagem em testes de inteligência e sabedoria sobre seu
-                        terreno favorito.</li>
+                    <li><strong>Dados de vida:</strong> 1d10</li>
+                    <li><strong>Pontos de vida no 1º Nivel:</strong> 10 + seu modificador de Constituiçã</li>
+                    <li><strong>Pontos de vida nos níves seguintes:</strong> 1d10 (ou 6) + seu modificador de
+                        Constituiçã por nível de
+                        patrulheiro após o 1º</li>
                 </ul>
-
-                <h3>🧾 Criação de Personagem</h3>
+            </details>
+            <details>
+                <summary class="detail-title"><strong>PROFICIÊNCIA</strong></summary>
                 <ul>
-                    <li><strong>PV Iniciais:</strong> 10 + mod. Constituição.</li>
-                    <li><strong>PV por Nível:</strong> 1d10 (ou 6) + mod. Constituição.</li>
-                    <li><strong>Testes de Resistência (Saving Throws):</strong> Força e Destreza.</li>
-                    <li><strong>Perícias (Skills):</strong> Escolha 3 entre: Adestrar Animais, Atletismo, Furtividade,
-                        Intuição, Investigação, Natureza, Percepção e Sobrevivência.</li>
+                    <li><strong>Armaduras:</strong> Armas simples, armas marciais</li>
+                    <li><strong>Armas:</strong> 10 + seu modificador de Constituiçã</li>
+                    <li><strong>Ferramentas:</strong> Nenhuma</li>
+                    <li><strong>Testes de Resistência:</strong>Força, Destreza</li>
+                    <li><strong>Perícias</strong> Escolha três entre
+                        <ul>
+                            <li>Adestrar Animais</li>
+                            <li>Atletismo</li>
+                            <li>Furtividade</li>
+                            <li>Intuição</li>
+                            <li>Investigação</li>
+                            <li>Natureza</li>
+                            <li>Percepção</li>
+                            <li>Sobrevivência</li>
+                        </ul>
+                    </li>
                 </ul>
-
-                <h3>&#x1F3F9; Habilidades Principais</h3>
+            </details>
+            <details>
+                <summary class="detail-title"><strong>EQUIPAMENTOS:</strong></summary>
+                <p>Começa com os seguintes itens, além do concedido pelo <a href="#">antecedente</a></p>
                 <ul>
-                    <li><strong>Inimigo Favorito (Favored Enemy):</strong> Vantagem para rastrear e recordar informações
-                        sobre tipos específicos de criaturas.</li>
-                    <li><strong>Consciência Primal:</strong> Permite usar um espaço de magia para detectar criaturas
-                        específicas (como dragões ou mortos-vivos) ao seu redor.</li>
-                    <li><strong>Estilo de Luta:</strong> Geralmente focado em Arquearia (Archery) ou Combate com Duas
-                        Armas.</li>
+                    <li>(a) brunea ou (b) armadura de couro</li>
+                    <li>(a) duas espadas curtas ou (b) duas armas simples corpo-a-corpo.</li>
+                    <li>(a) um pacote de explorador ou (b) um pacote de aventureiro</li>
+                    <li>Um arco longo e uma aljava com 20 flechas</li>
                 </ul>
+            </details>
 
+        </article>
+        <article class="pornivel">
+            <details>
+                <summary>NIVEL 1</summary>
                 <details>
-                    <summary><strong>Magias Iniciais Sugeridas:</strong></summary>
-                    <ul>
-                        <li><em>Marca do Caçador (Hunter's Mark):</em> Adiciona 1d6 de dano extra a cada acerto no alvo
-                            marcado.</li>
-                        <li><em>Salto Localizado (Cure Wounds):</em> Cura essencial para suporte rápido.</li>
-                        <li><em>Passos Sem Pegadas (Pass Without Trace):</em> Concede um bônus massivo (+10) em testes
-                            de Furtividade para o grupo.</li>
-                    </ul>
+                    <summary>INIMIGO FAVORITO</summary>
+                    <p><strong>O que faz?</strong>Experiência significativa em estudar, rastrear, caçar e falar com certos tipos de inimigo</p>
+
+                    <p><strong>Escolha um inimigo favorito:</strong> bestas, fadas, humanoides, monstruosidades ou mortos-vivos</p>
+                    <p><strong>Bônus:</strong>+2 nas jogadas de dano com ataque com arma contra a criatura escolhida.</p>
+                    <p><strong>Vantagem:</strong> em testes de Sabedoria (Sobrevivência) para rastrear seus inimigos favoritos assim como em testes de <span class="destacar">Inteligência</span> para lembrar de informações sobre eles</p>
+                    <p><strong>Idioma:</strong>Um idioma a escolha, que seja falado pelo inimigo favorito</p>
                 </details>
 
-                <h3>&#x1F392; Equipamento Inicial</h3>
+                <details>
+                    <summary>EXPLORADOR NATURAL</summary>
+                    <p>Mestre na navegação pelo mundo natural, reage de forma rápida e decisiva quando atacado</p>
+                    <p><strong>Benefícios:</strong>
+                        <ul>
+                            <li>Ignora terreno difícil</li>
+                            <li>Vantagem em rolagens de iniciativa</li>
+                            <li>No primeiro turno, vantagem nas jogadas contra criaturas que não tenham agido</li>
+                        </ul>
+                    </p>
+                </details>
+        </article>
+        <article class="class-recommended">
+            <h3>CLASSES RECOMENDADAS</h3>
+            <ul>
+                <li><a href="../racas/elfo.html">ELFO</a></li>
+                <li><a href="../racas/meio-elfo.html">MEIO-ELFO</a></li>
+                <li><a href="../racas/humano.html">HUMANO</a></li>
+            </ul>
+        </article>
+
+        <article class="sub-racas">
+            <h2>SUB-RAÇAS</h2>
+            <details>
+                <summary>ALTO ELFO</summary>
                 <ul>
-                    <li>Brunea (Scale Mail) OU armadura de couro.</li>
-                    <li>Duas espadas curtas OU duas armas simples corpo-a-corpo.</li>
-                    <li>Um pacote de masmorreiro OU um pacote de explorador.</li>
-                    <li>Um arco longo e uma aljava com 20 flechas.</li>
-                    <li><strong>Ouro Inicial:</strong> 5d4 x 10 PO.</li>
+                    <li><strong>Aumento no valor de Habilidade:</strong>Aumenta Inteligência em +1</li>
+                    <li><strong>Treinamento élfico com armas:</strong>Proficiência em espadas longas, espadas curtas,
+                        arcos
+                        longos e arcos curtos</li>
+                    <li><strong>Truque:</strong>Você conhece um truque, à sua escolha. Inteligência é a Habilidade usada
+                        para conjurar esse ataque </li>
+                    <li><strong>Idioma adicional</strong>Pode ler,escrever e falar um idioma adicional à escolha.</li>
                 </ul>
-
-                <h3>&#x1F3AD Roleplay</h3>
+            </details>
+            <details>
+                <summary>ELFO DA FLORESTA</summary>
                 <ul>
-                    <li>Vive nas fronteiras da civilização, protegendo o mundo civilizado de ameaças selvagens.</li>
-                    <li>Possui um conhecimento profundo sobre a fauna e flora, agindo como batedor ou guia.</li>
-                    <li>Pode ser um lobo solitário ou um caçador de recompensas focado em monstros específicos.</li>
+                    <li><strong>Aumento no valor de Habilidade:</strong>Sabedoria aumenta em +1</li>
+                    <li><strong>Treinamento com Armas:</strong>Proficiência com espadas longas, espadas curtas, arcos
+                        longos, arcos curtos</li>
+                    <li><strong>Pés ligeiros:</strong>Deslocamento base aumenta para 10,5m</li>
+                    <li><strong>Máscara da Natureza:</strong>Pode tentar se esconder mesmo que levemente obscurecido por
+                        qualquer fenomeno natural (folhagem,chuva forte,neve,nevoa,etc.)</li>
                 </ul>
-
-                <h3>&#x2694;&#xFE0F; Dicas Práticas</h3>
+            </details>
+            <details>
+                <summary>ELFO NEGRO (DROW)</summary>
                 <ul>
-                    <li><strong>Mantenha a Marca:</strong> A *Marca do Caçador* é quase obrigatória. Como ela exige
-                        concentração, evite usar outras magias que também a exijam durante o combate.</li>
-                    <li><strong>Versatilidade de Ataque:</strong> O patrulheiro é excelente tanto à distância (Arco)
-                        quanto de perto (Duas espadas curtas).</li>
-                    <li><strong>Utilidade fora de combate:</strong> Sua habilidade de nunca se perder em terrenos
-                        favoritos torna viagens longas muito mais seguras para o grupo.</li>
+                    <li><strong>Aumento no valor de Habilidade:</strong>Carisma aumenta em +1</li>
+                    <li><strong>Visão no Escuro Superior:</strong>Alcance de visão no escuro de 36m</li>
+                    <li><strong>Sensibilidade à luz do Sol:</strong>Desvantagem nas jogadas de ataques e testes de
+                        Sabedoria(percepção), quando estiver sob a luz solar </li>
+                    <li><strong>Treinamento de Armas:</strong>Proficiência com rapieiras, espadas curtas e bestas de mão
+                    </li>
+                    <li><strong>Magia Drow:</strong>
+                        <ul>
+                            <li>Possui o truque, globos de luz</li>
+                            <li>Ao alcançar nivel 3° pode conjurar a magia Fogo das Fadas</li>
+                            <li>Ao alcançar nivel 5° pode conjurar "escuridão"</li>
+                            <li>obs:
+                                <ul>
+                                    <li>Precisa de descanso longo para conjurar as magias novamente</li>
+                                    <li>Carisma é a habilidade chave</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-
-                <h3>&#x1F9EC Arquétipos de Patrulheiro (Subclasses)</h3>
-
-                <h4>&#x1F3AF; Caçador (Hunter)</h4>
-                <ul>
-                    <li><strong>Presa do Caçador:</strong> Escolha uma especialização como *Matador de Gigantes* ou
-                        *Quebra-Hordas* para aumentar seu dano.</li>
-                    <li><strong>Foco:</strong> Eficiência pura em combate e defesa.</li>
-                </ul>
-
-                <h4>&#x1F43A; Mestre das Bestas (Beast Master)</h4>
-                <ul>
-                    <li><strong>Companheiro do Patrulheiro:</strong> Você ganha um animal aliado que luta ao seu lado e
-                        obedece aos seus comandos.</li>
-                    <li><strong>Foco:</strong> Trabalho em equipe com uma criatura selvagem.</li>
-                </ul>
-
-                <h3>&#x1F4CC Resumo Rápido</h3>
-                <ul>
-                    <li>Mestre do rastreamento e exploração.</li>
-                    <li>Dano consistente em alvo único (Marca do Caçador).</li>
-                    <li>Combina proeza marcial com magias utilitárias da natureza.</li>
-                </ul>
-
-            </article>
-        </section>
+            </details>
+        </article>
     </main>
 
     <footer>

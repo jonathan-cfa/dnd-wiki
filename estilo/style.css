@@ -25,7 +25,7 @@
 body {
     color: white;
     background-color: black;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font2);
 }
 
@@ -211,7 +211,8 @@ main.caixa>article>details>p {
 
 .conteudo-racas {
     display: grid;
-    grid-template: 5px 30px 150px auto 2fr repeat(5, auto) / 5px 150px 1fr 5px;
+    grid-template: 5px 30px 150px auto 2fr  repeat(5, auto) / 5px 150px 1fr 5px;
+    grid-auto-rows: auto;
     grid-auto-rows: 100px;
 }
 
@@ -260,19 +261,19 @@ main.caixa>article>details>p {
 .class-recommended{
     font-size: 11px;
     justify-items: center;
-    grid-area: 6 / 2 / 7 /-2;
+    grid-area: 8 / 2 / 9 /-2;
     margin: 20px auto 10px auto;
     background-color: var(--cor2);
     width: min(90%,250px);
     border-radius: 5px 0px;
     box-shadow: 0px 1px 1px 1px rgba(255, 255, 0, 0.068);
     padding-top: 5px;
-    transition: bacground-color 0.4s, color 0.4s;
 }
 .class-recommended a {
     text-decoration: none;
     font-family: var(--font2);
     color: var(--cor3);
+
     
 }
 
@@ -322,6 +323,15 @@ li {
     padding-top: 5px;
 }
 
+/* ========================CONTEUDO CLASSES */
+.pornivel{
+    grid-area: 6 / 2 / 7 / -2;
+}
+
+.destacar{
+    color: var(--cor4);
+    text-decoration: underline;
+}
 
 /* ====================================================RODAPÉ */
 footer {
