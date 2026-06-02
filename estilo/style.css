@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
+    --cormenu:rgba(31, 30, 30, 0.87);
     --cor00: #71717A;
     --cor0: #1D2021;
     --cor1: #17171C;
@@ -76,7 +77,7 @@ nav { /* Hidden navigation menu */
     display: none;
     flex-flow: column nowrap;
     padding: 10px;
-    background-color: rgba(31, 30, 30, 0.87);
+    background-color: var(--cormenu);
     width: 150px;
     position: absolute;
     top: 30px;
@@ -146,7 +147,7 @@ section>h2 {
 }
 
 
-section>img {
+section>img { /* logo principal maior */
     width: 300px;
     align-self: flex-start;
 }
@@ -229,6 +230,7 @@ main.caixa>article>details>p {
 
 .conteudo-racas>h2 {
     font-size: 1em;
+    padding-bottom: 10px;
 }
 
 .conteudo-racas>img {
@@ -238,28 +240,28 @@ main.caixa>article>details>p {
 }
 
 .descricao {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5em;
     text-transform: capitalize;
-    padding-left: 10px;
+    padding: 10px 0px;
     font-family: var(--font1);
     color: var(--cor3);
 }
 
 .speed-help {
-    font-size: 11px;
+    font-size: 16px;
     margin: 20px auto 10px auto;
-    background-color: var(--cor2);
-    width: min(90%,250px);
     border-radius: 5px 0px;
     box-shadow: 0px 1px 1px 1px rgba(255, 255, 0, 0.068);
-    padding-top: 5px;
+    width: 95%;
+}
+
+.speed-help > ul > li{
+    font-size: 1.1em;
 }
 .class-recommended{
-    font-size: 11px;
     margin: 20px auto 10px auto;
-    background-color: var(--cor2);
-    width: min(90%,250px);
+    width: 90%;
     border-radius: 5px 0px;
     box-shadow: 0px 1px 1px 1px rgba(255, 255, 0, 0.068);
     padding-top: 5px;
@@ -283,39 +285,45 @@ main.caixa>article>details>p {
     width: 90%;
 }
 
-
-.tracos,
-.tracos p {
-    font-size: 11px;
-    padding-top: 5px;
-    list-style-position: inside;
-    line-height: 1.5em;
+.tracos h2{
+    font-size: 20px;
 }
 
-.sub-racas {
-
+.tracos ul > li {
+    font-size: 16px;
+    list-style-position: inside;
+    line-height: 1.5em;
 }
 
 .sub-racas>h2 {
     color: var(--cor3);
     font-size: 1.2em;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .sub-racas>details {
     font-size: 1em;
-    padding-top: 10px;
+    padding-top: 30px;
+}
+
+.sub-racas>details > summary{
+    font-size: 1.3em;
 }
 
 .sub-racas>details>ul,
 li {
-    font-size: 14px;
+    font-size: 1em;
     text-align: left;
     padding-top: 5px;
 }
 
 /* ========================CONTEUDO CLASSES */
 .pornivel{
+    padding: 10px;
+}
+
+.pornivel > details,summary {
+    padding: 10px;
 }
 
 .destacar{
@@ -325,6 +333,7 @@ li {
 
 /* ====================================================RODAPÉ */
 footer {
+    background-color: black;
     color: rgba(114, 114, 114, 0.945);
     padding: 10px;
 }
